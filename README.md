@@ -7,8 +7,10 @@ The **solution** branch contains documented solution code. The commit history of
 ## Overview
 
 1. Define Prisma schema according to the provided database schema.
-1. Write a seed script to initialize the database with Prisma Migrate.
-1. Write Express routes that perform CRUD operations via Prisma Client.
+
+2. Write a seed script to initialize the database with Prisma Migrate.
+
+3. Write Express routes that perform CRUD operations via Prisma Client.
 
 ## Database Schema
 
@@ -38,14 +40,19 @@ Ref: "Book"."authorId" > "Author"."id"
 
 ### Initialize the Database
 
-1. Fork and clone this repo. Work in your local repository!
-1. Install the Prisma CLI.\
+xx1. Fork and clone this repo. Work in your local repository!
+x1. Install the Prisma CLI.\
    `npm install prisma --save-dev`
-1. Initialize Prisma to use sqlite.\
+x1. Initialize Prisma to use sqlite.\
    `npx prisma init --datasource-provider sqlite`
-1. In the generated `.env` file, set `DATABASE_URL` to `"file:books.db"`.
+
+
+x1. In the generated `.env` file, set `DATABASE_URL` to `"file:books.db"`.
+
 1. Add models to your `schema.prisma` file according to the database schema above.
+
 1. Create and run the initial migration.\
+
    `npx prisma migrate dev --name init`
 1. Explore the created database. You should see two empty models: `Author` and `Book`.\
    `npx prisma studio`
