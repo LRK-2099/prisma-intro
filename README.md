@@ -49,7 +49,7 @@ x1. Initialize Prisma to use sqlite.\
 
 x1. In the generated `.env` file, set `DATABASE_URL` to `"file:books.db"`.
 
-1. Add models to your `schema.prisma` file according to the database schema above.
+x1. Add models to your `schema.prisma` file according to the database schema above.
 
 1. Create and run the initial migration.\
 
